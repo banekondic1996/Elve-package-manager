@@ -1,0 +1,32 @@
+{
+    "name": "elve-package-manager",
+    "version": "1.0.0",
+    "description": "Universal Linux package manager GUI",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "keywords": [
+        "package-manager",
+        "linux",
+        "electron"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^27.3.11",
+        "electron-builder": "^24.13.3"
+    },
+    "build": {
+        "appId": "com.elve.packagemanager",
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ],
+            "category": "System",
+            "icon": "ElvePackageManager.png"
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elve Package Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h1>🗃️ Elve Package Manager</h1>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="search">Install Packages</button>
+      <button class="tab-btn" data-tab="installed">Installed Packages</button>
+    </div>
+
+    <!-- Search/Install Tab -->
+    <div class="tab-content active" id="search-tab">
+      <div class="main-layout">
+        <div class="search-section">
+          <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for packages...">
+            <select id="search-type" class="search-type-select">
+              <option value="all">All</option>
+              <option value="name">Name only</option>
+              <option value="description">Description only</option>
+            </select>
+            <button id="search-btn">Search</button>
+          </div>
+
+          <div id="search-results" class="package-list"></div>
+        </div>
+
+        <div class="install-queue">
+          <h3>Packages to Install</h3>
+          <div class="selection-bar">
+            <span id="selected-install-count">0 packages</span>
+            <button id="clear-install-btn" class="unselect-btn" disabled>Clear</button>
+          </div>
+          <div id="install-queue-list" class="queue-list"></div>
+          <button id="install-selected-btn" class="action-btn install-btn full-width" disabled>Install All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Installed Packages Tab -->
+    <div class="tab-content" id="installed-tab">
+      <div class="search-bar">
+        <input type="text" id="installed-search-input" placeholder="Filter installed packages...">
+        <button id="refresh-btn" class="refresh-btn">Refresh</button>
+      </div>
+
+      <div class="selection-bar">
+        <span id="selected-uninstall-count">0 packages selected</span>
+        <div class="action-buttons">
+          <button id="unselect-uninstall-btn" class="unselect-btn" disabled>Unselect All</button>
+          <button id="uninstall-selected-btn" class="action-btn uninstall-btn" disabled>Uninstall Selected</button>
+        </div>
+      </div>
+
+      <div id="installed-list" class="package-list"></div>
+    </div>
+  </div>
+
+  <!-- Modal for confirmation -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="modal-title">Confirm Action</h2>
+      <div id="modal-body"></div>
+      <div id="password-input-container" class="password-container" style="display: none;">
+        <label for="password-input">Enter your password:</label>
+        <input type="password" id="password-input" placeholder="Password">
+      </div>
+      <div class="modal-actions">
+        <button id="modal-cancel" class="btn-secondary">Cancel</button>
+        <button id="modal-confirm" class="btn-primary">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading" class="loading hidden">
+    <div class="spinner"></div>
+    <p>Processing...</p>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
