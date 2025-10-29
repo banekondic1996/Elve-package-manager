@@ -4,6 +4,7 @@ Why? <br>
 Cause i need one for my linux desktop environment I'm making. <br>
 It's just simple search and install packages, and uninstall. Not much going on here. <br>
 Best part is that it works on Arch, Debian, RHEL <br> <br>
-<img width="1312" height="916" alt="image" src="https://github.com/user-attachments/assets/fe09c029-aba6-4c3c-a48e-d14ef8feb97e" />
+<img width="1312" height="916" alt="image" src="https://github.com/user-attachments/assets/85f7f3ff-6eeb-4d86-8975-d99b050b2e74" />
+
 
 
