@@ -2,10 +2,11 @@
 This is just vibe coded sort of package manager for linux <br>
 Why? <br>
 Cause i need one for my linux desktop environment I'm making. <br>
-It's just simple search and install packages, and uninstall. Not much going on here. <br>
+It's just simple search and install packages, uninstall, install with exported list. Not much going on here. <br>
 Best part is that it works on Arch, Debian, RHEL <br> <br>
 **Download** - <a href="https://github.com/banekondic1996/Elve-package-manager/releases/tag/1.0">Link</a> <br><br>
-<img width="1312" height="916" alt="image" src="https://github.com/user-attachments/assets/85f7f3ff-6eeb-4d86-8975-d99b050b2e74" />
+<img width="1329" height="918" alt="image" src="https://github.com/user-attachments/assets/5b8741d1-1f46-43ed-a9c2-2e6f5df45e6a" />
+
 
 
 
